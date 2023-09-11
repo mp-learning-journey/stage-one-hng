@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == 'GET') {
     }else{
         $response = [
             "slack_name" => $slack,
-            "current_day" => date('D'),
+            "current_day" => date('l'),
             "utc_time" => gmdate('Y-m-d\TH:i:s\Z'),
             "track" => $track,
             "github_file_url" => "https://github.com/mp-learning-journey/stage-one-hng/blob/main/api.php",
